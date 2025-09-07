@@ -69,6 +69,7 @@ SUMX (
     Försäljning,
     Försäljning[Antal] * Försäljning[EnhetsprisSEK] * (1 - Försäljning[Rabatt])
 )
+```
 
 SUMX går rad för rad i tabellen Försäljning.
 Räknar kvantitet × pris × (1 – rabatt).
@@ -83,6 +84,7 @@ SUMX (
     Försäljning,
     Försäljning[Antal] * Försäljning[EnhetsprisSEK]
 )
+```
 
 Samma som netto men utan rabattfaktorn.
 
@@ -96,6 +98,7 @@ SUMX (
     Försäljning,
     Försäljning[Antal] * RELATED ( Produkter[BeräknadKostnadSEK] )
 )
+```
 
 RELATED hämtar kostnad från Produkter via relationen ProductID.
 
